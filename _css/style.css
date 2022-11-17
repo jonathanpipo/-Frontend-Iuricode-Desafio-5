@@ -1,0 +1,150 @@
+/*Variables*/
+:root {
+  --cor-verde1: #658E76;
+  --cor-verde2:#1A4855;
+}
+
+/*Reset CSS*/
+@import url(./cssNormalize.css);
+
+
+/*Global*/
+* {
+  box-sizing: border-box;
+}
+html {
+}
+img {
+  display: block;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 100vh;
+}
+button {
+  display: flex;
+  align-items: center;
+  min-width:auto;
+  padding: 16px 32px;
+  border: 2px solid var(--cor-verde1);
+  background: var(--cor-verde1);
+  transform: skew(-15deg);
+}
+button span {
+  transform: skew(15deg);
+}
+/*Utilidades*/
+.container {
+  margin: 0 auto 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  min-width: 314px;
+}
+.background {
+  background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+}
+/*Fontes*/
+.tittleH3 {
+  font: normal normal 700 20px/30px 'Poppins';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F9F9F9;
+}
+.tittleH1 {
+  font: normal normal 900 68px/74px 'Poppins';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F9F9F9;
+}
+.tittleP {
+  font: normal normal 400 16px/29px 'Poppins';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F9F9F9;
+}
+/*Header*/
+header {
+  width: 100%;
+  height: auto;
+}
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header section > img {
+  width: 100px;
+}
+header section nav ul {
+  display: flex;
+  gap: 32px;
+}
+nav ul li a img {
+  width: 100%;
+}
+/*Main*/
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+main section h3 {
+  margin-bottom: 16px;
+}
+main section h1 {
+  margin-bottom: 32px;
+}
+main section p {
+  margin-bottom: 64px;  
+}
+main section .botoes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+#button1 {
+  font: normal normal 400 16px/29px 'Poppins';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F9F9F9;
+}
+#button2 {
+  background-color: transparent;
+  font: normal normal 400 16px/29px 'Poppins';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F9F9F9;
+}
+.botoes button img {
+  width: 15px;
+  margin: 0 16px 0 0;
+}
+body main img {
+  width: 50%;
+}
+/*MEDIA QUERY*/
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  main section {
+    width: 80%;
+  }
+  body main img {
+    width: 80%;
+  }
+}
